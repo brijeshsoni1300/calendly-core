@@ -1,0 +1,17 @@
+.appEngineCalender__month{
+	display: flex;
+	justify-content: space-between;
+}
+
+.appEngineCalender__monthNavigation > button{
+	border: none;
+	background-color: white;
+}
+
+.appEngineCalender__weekDay{
+	padding-top: 15px ;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+

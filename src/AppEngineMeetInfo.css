@@ -1,0 +1,36 @@
+.appEngineMeetInfo{
+	display: flex;
+	flex-direction: column;
+	padding: 30px 0;
+}
+
+.appEngineMeetInfo__backwordIcon{
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+	align-items: center;
+	border: 1px solid rgb(161, 160, 160);
+	background-color: white;
+}
+.appEngineMeetInfo__host{
+	padding: 20px 10px 0 0;
+	color: gray;
+}
+
+.appEngineMeetInfo__title{
+	padding: 10px 0;
+}
+
+.appEngineMeetInfo__disc{
+	padding: 20px 0;
+}
+
+.appEngineMeetInfo__duration{
+	display: flex;
+	align-items: center;
+}
+
+.appEngineMeetInfo__mode{
+	display: flex;
+	align-items: center;
+}

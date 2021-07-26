@@ -1,0 +1,25 @@
+.appEngineSlots__slot > button{
+	width: 200px;
+	height: 50px;
+	border: 1.5px solid rgb(65, 65, 228);
+	border-radius: 5px;
+	color: rgb(65, 65, 228);
+	background-color: white;
+	font-weight: 500;
+	font-size: 18px;
+	margin: 5px;
+}
+
+/* ~~~ */
+.appEngineSlots__slot{
+	height: 300px;
+	overflow-x: hidden;
+	overflow-y: auto;
+
+}
+/* ~~~ */
+
+
+.appEngineSlots__dayAndDate{
+	padding-bottom:30px; 
+}

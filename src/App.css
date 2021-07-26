@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.app__engine{
+  display: flex;
+  filter: drop-shadow(0 0 0.15rem rgb(190, 186, 186));
+  height: 80vh;
+  width: 80vw;
+  padding: 0 30px;
+  margin: 60px 0;
+  border:none;
+  border-radius: 10px;
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__verticleLine{
+  border-left: 0.25px solid rgb(231, 226, 226);
+  height: 100%;
+  margin: 0 20px;
+}
+
+.app__engine__meetinfo{
+  flex: 1;
+}
+
+.app__engine__calender{
+  flex: 1.2;
+}
+
+.app__engine__slots{
+  display: flex;
+  justify-content: center;
+  flex: 0.8;
+}
+
+.app__calenderLogic{
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+}
+
+.app__calenderLogic__Info{
+  display: flex;
 }

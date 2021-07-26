@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import AppEngineMeetInfo from "./AppEngineMeetInfo";
+import AppEngineCalender from "./AppEngineCalender";
+import AppEngineSlots from "./AppEngineSlots";
+import CalenderHeader from "./CalenderHeader";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="app__engine">
+        <div className="app__engine__meetinfo">
+          <AppEngineMeetInfo />
+        </div>
+        <div className="app__verticleLine"></div>
+        <div className="app__calenderLogic">
+          <div className="app__calenderLogic__Header">
+            <CalenderHeader />
+          </div>
+          <div className="app__calenderLogic__Info">
+            <div className="app__engine__calender">
+              <AppEngineCalender />
+            </div>
+            <div className="app__engine__slots">
+              <AppEngineSlots />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
