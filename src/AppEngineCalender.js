@@ -7,7 +7,7 @@ import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 function AppEngineCalender() {
   const mon = ["Jan", "Feb", "Mar", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
   const [year, setYear] = useState(2021);
-  const [monthIndex, setMonthIndex] = useState(0);
+  const [monthIndex, setMonthIndex] = useState(0);  
   const [month, setMonth] = useState(mon[0]);
   const [date, setDates] = useState([]);
   const fetchDate = () =>{
@@ -15,14 +15,14 @@ function AppEngineCalender() {
   let start = d.getDate();
   let startDay = d.getDay();
   let monthDates = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-  // monthDates = monthDates.map((ele,index)=>{
-  //     if(index>startDay ){
-  //       return ++start;
-  //     }else{
-  //       return 0;
-  //     }
-  // })
-  // setDates(monthDates);
+  monthDates = monthDates.map((ele,index)=>{
+      if(index>startDay ){
+        return ++start;
+      }else{
+        return 0;
+      }
+  })
+  setDates(monthDates);
   }
 
   const incrementMonth = () =>{
