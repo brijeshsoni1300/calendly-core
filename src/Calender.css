@@ -1,0 +1,31 @@
+.Calender__day{
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+
+}
+
+.Calender__day > tbody > tr{
+	text-align: center;
+	
+}
+
+.Calender__weekDay{
+	padding: 5px 13.2px ;
+
+}
+
+.Calender__dates{
+	padding: 10px 19px;
+	align-items: center;
+}
+
+.Calender__datesblank{
+	margin: 10px 19px;
+	padding: 10px 19px;
+	align-items: center;
+}
+
+.Calender__today{
+	background-color: lightblue;
+}
